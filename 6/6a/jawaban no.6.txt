@@ -1,0 +1,1 @@
+SELECT ca.name AS 'cashier', p.name AS 'product', c.name AS 'category', p.price FROM category c JOIN product p ON (c.id=p.id_category) JOIN cashier ca ON (p.id_cashier=ca.id)
